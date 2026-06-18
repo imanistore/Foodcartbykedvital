@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodcartby Kedvital | Premium Foodstuffs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-black font-sans scroll-smooth">
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto px-6 md:px-16 py-5 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center">
+                <img src="logo.jpg.jpg" alt="Foodcartby Kedvital Logo" class="h-12 w-auto object-contain">
+            </a>
+            
+            <!-- Desktop Navigation (Hidden on Mobile/Tablet) -->
+            <nav class="hidden md:flex space-x-10 font-medium tracking-wide text-gray-900">
+                <a href="#home" class="hover:text-green-600 transition">Home</a>
+                <a href="#about" class="hover:text-green-600 transition">About</a>
+                <a href="#gallery" class="hover:text-green-600 transition">Our Products</a>
+                <a href="#testimonials" class="hover:text-green-600 transition">Reviews</a>
+                <a href="#contact" class="hover:text-green-600 transition">Contact</a>
+            </nav>
+
+            <!-- Action Area -->
+            <div class="flex items-center space-x-4">
+                <!-- Order Now Button (Hidden on extra small mobile screens) -->
+                <a href="https://wa.me/2348169421305" class="hidden sm:inline-block bg-green-600 text-white px-6 py-3 text-sm font-semibold tracking-wider uppercase hover:bg-green-700 transition rounded-[10px] shadow-sm">
+                    Order Now
+                </a>
+                
+                <!-- Hamburger Menu Button (Visible ONLY on Mobile/Tablet) -->
+                <button id="menu-toggle" class="block md:hidden text-gray-900 focus:outline-none p-2" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default, toggled via JavaScript) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-3 shadow-inner">
+            <a href="#home" class="mobile-link block text-gray-900 hover:text-green-600 font-medium transition py-2 border-b border-gray-100">Home</a>
+            <a href="#about" class="mobile-link block text-gray-900 hover:text-green-600 font-medium transition py-2 border-b border-gray-100">About</a>
+            <a href="#gallery" class="mobile-link block text-gray-900 hover:text-green-600 font-medium transition py-2 border-b border-gray-100">Our Products</a>
+            <a href="#testimonials" class="mobile-link block text-gray-900 hover:text-green-600 font-medium transition py-2 border-b border-gray-100">Reviews</a>
+            <a href="#contact" class="mobile-link block text-gray-900 hover:text-green-600 font-medium transition py-2">Contact</a>
+            <!-- Mobile specific Order Button for tiny screens -->
+            <a href="https://wa.me/2348169421305" class="mobile-link block sm:hidden text-center bg-green-600 text-white px-6 py-3 text-sm font-semibold tracking-wider uppercase hover:bg-green-700 transition rounded-[10px] shadow-sm mt-4">
+                Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-[url('Back.jpg.jpg')] bg-cover bg-center min-h-[90vh] flex items-center py-24 md:py-36">
+        <div class="absolute inset-0 bg-black/75"></div>
+        
+        <div class="container mx-auto px-6 md:px-16 relative z-10 text-center md:text-left text-white space-y-8">
+            <span class="text-xs font-bold tracking-widest uppercase text-green-400">Premium & Unadulterated</span>
+            <h1 class="text-4xl md:text-6xl font-light tracking-tight leading-tight max-w-4xl">
+                Authentic Foodstuffs <br> <span class="font-semibold text-white">Sourced For Quality.</span>
+            </h1>
+            <p class="text-base md:text-xl max-w-2xl text-gray-300 font-medium leading-relaxed">
+                Your trusted source for premium local foodstuffs. We bring the rich, true taste of home straight to your kitchen.
+            </p>
+            <div class="pt-4">
+                <a href="#gallery" class="bg-green-600 text-white font-semibold tracking-wider uppercase py-4 px-10 inline-block hover:bg-green-700 transition shadow-lg text-sm rounded-[10px]">
+                    View Our Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 md:py-35 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 md:px-16 text-center max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-wider uppercase text-black mb-6">About Us</h2>
+            <div class="w-12 h-0.5 bg-green-600 mx-auto mb-12"></div>
+            <p class="text-lg md:text-xl text-gray-600 font-regular leading-relaxed text-center max-w-3xl mx-auto">
+                <strong class="text-black font-bold">FOODCARTBYKEDVITAL</strong> is an online and walk-in foodstuff store located in Kubwa, Abuja, known for providing premium and unadulterated food stuffs be it yam flour, garri ijebu, ponmo ijebu, dried iru and palm oil. We handle every item with absolute care to guarantee the traditional freshness and excellence your meals deserve.
+            </p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GALLERY -->
+    <section id="gallery" class="py-20 md:py-35 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-9 md:px-16">
+            <div class="text-center mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wider uppercase text-black">Our Products</h2>
+                <div class="w-12 h-0.5 bg-green-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 font-medium mt-8 text-sm md:text-base">Everyday kitchen essentials, curated without compromise.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Garri ijebu 1kg. jpg. jpeg.jpg" alt="Garri Ijebu 1kg" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Garri Ijebu 1kg</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦2,300</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Garri%20Ijebu%201kg" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Garri Ijebu 2kg. jpg. jpeg.jpg" alt="Garri Ijebu 2kg" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Garri Ijebu 2kg</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦4,500</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Garri%20Ijebu%202kg" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Garii ijebu 5kg. jpg. jpeg.jpg" alt="Garri Ijebu 5kg" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Garri Ijebu 5kg</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦11,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Garri%20Ijebu%205kg" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Palm Oil 1ltr.jpg.jpg" alt="Palm Oil 1ltr" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Palm Oil 1ltr</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦4,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Palm%20Oil%201ltr" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Dried iru 200g. jpg. jpeg.jpg" alt="Dried Iru 200g" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Dried Iru 200g</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦4,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Dried%20Iru%20200g" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Palm oil 4ltrs.jpg.jpg" alt="Palm Oil 4ltrs" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Palm Oil 4ltrs</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦14,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Palm%20Oil%204ltrs" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Palm oil 5ltrs. jpg. jpeg.jpg" alt="Palm Oil 5ltrs" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Palm Oil 5ltrs</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦16,500</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Palm%20Oil%205ltrs" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Palm oil 2ltrs. jpg. jpeg.jpg" alt="Palm Oil 2ltrs" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Palm Oil 2ltrs</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦7,500</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Palm%20Oil%202ltrs" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Dried iru 500g. jpg. jpeg.jpg" alt="Dried Iru 500g" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Dried Iru 500g</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦8,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Dried%20Iru%20500g" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Yamflour 1kg.jpg. jpeg.jpg" alt="Yam Flour 1kg" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Yam Flour 1kg</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦4,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Yam%20Flour%201kg" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Yam 2kg. jpg.jpg" alt="Yam Flour 2kg" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Yam Flour 2kg</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦8,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Yam%20Flour%202kg" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="bg-white border border-gray-200 group overflow-hidden rounded-[10px] shadow-sm p-3">
+                    <div class="bg-gray-100 h-64 w-full overflow-hidden rounded-[8px]">
+                        <img src="Pommo ijebu medium size.jpg" alt="Ponmo Ijebu Medium Size" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="font-medium text-gray-900 text-sm">Ponmo Ijebu (Med)</h3>
+                            <span class="text-green-600 font-bold text-base mt-0.5">₦4,000</span>
+                        </div>
+                        <a href="https://wa.me/2348169421305?text=I%20want%20to%20order%20Ponmo%20Ijebu%20Medium%20Size" class="text-xs uppercase font-bold tracking-wider bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition rounded-[10px]">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 md:py-30 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 md:px-14">
+            <div class="text-center mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wider uppercase text-black">What Our Customers Say</h2>
+                <div class="w-10 h-0.5 bg-green-600 mx-auto mt-4"></div>
+                <p class="text-gray-500 font-medium mt-6 text-sm md:text-base">Real reviews from our amazing community across Abuja.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-[10px] border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-amber-500 text-lg">★★★★★</div>
+                        <p class="text-gray-600 font-regular italic leading-relaxed">"The Amala was really soft and nice, we prepared it yesterday"</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <p class="font-semibold text-gray-900 text-sm">Customer from Instagram.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-[10px] border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-amber-500 text-lg">★★★★★</div>
+                        <p class="text-gray-600 font-regular italic leading-relaxed">"Getting real, pure palm oil in Abuja can be hard, but Kedvital's palm is amazing. The oil is very good, thank you ma!"</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <p class="font-semibold text-gray-900 text-sm">Customer from WhatsApp.</p> 
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-[10px] border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-500 text-lg">★★★★★</div>
+                        <p class="text-gray-600 font-regular italic leading-relaxed">"Thank you for the dried iru. Now I don't have to worry about it getting spoilt. Despite adding a little to my vegetables, it tasted as if I emptied the whole container."</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <p class="font-semibold text-gray-900 text-sm">Customer from WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 md:py-35 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-16">
+            <div class="text-center mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-wider uppercase text-black">Contact Us</h2>
+                <div class="w-12 h-0.5 bg-green-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-0 border border-gray-200 bg-white shadow-sm overflow-hidden rounded-[10px]">
+                <div class="p-10 md:p-16 lg:p-20 space-y-8 flex flex-col justify-center">
+                    <h3 class="text-xl font-semibold text-black tracking-wide uppercase">Get In Touch</h3>
+                    <p class="text-gray-500 font-medium text-sm leading-relaxed">Reach out directly to place wholesale orders, check retail availability, or drop by our space.</p>
+                    
+                    <div class="space-y-6 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <span class="text-green-600 mt-1">📌</span>
+                            <div>
+                                <p class="text-xs text-gray-400 font-bold tracking-wider uppercase">Location</p>
+                                <p class="text-base text-gray-900 font-medium">Kubwa, Abuja, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-green-600 mt-1">📞</span>
+                            <div>
+                                <p class="text-xs text-gray-400 font-bold tracking-wider uppercase">Call / WhatsApp</p>
+                                <a href="tel:08169421305" class="text-base font-medium text-black hover:text-green-600 transition">0816 942 1305</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="text-green-600 mt-1">✉️</span>
+                            <div>
+                                <p class="text-xs text-gray-400 font-bold tracking-wider uppercase">Email</p>
+                                <a href="mailto:adeyemideborah1@gmail.com" class="text-base font-medium text-black hover:text-green-600 transition break-all">adeyemideborah1@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full min-h-[400px] bg-gray-100 relative grayscale contrast-125">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.0952617107882!2d7.361617075067306!3d9.145868790920225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b1710b947f3%3A0x8fd2f7777f23333f!2sFoodcartbykedvital%20foodstuffs%20Garri%20ijebu!5e0!3m2!1sen!2sng!4v1781145249045!5m2!1sen!2sng" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 pt-16 pb-8 border-t border-gray-900">
+        <div class="container mx-auto px-6 md:px-16 flex flex-col items-center space-y-8 text-center">
+            
+            <div class="flex items-center justify-center space-x-4">
+                <a href="https://www.tiktok.com" target="_blank" class="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition duration-300 shadow-md">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.03 1.6 4.17 1.12 1.25 2.75 1.98 4.41 2.14v3.91c-1.24-.07-2.47-.48-3.5-1.19-.77-.54-1.41-1.25-1.89-2.07v7.26c0 3.37-1.95 6.42-5.06 7.69-2.45 1.01-5.29.74-7.51-.71C2.19 19.52 1 16.92 1 14.15c.03-3.23 2.11-6.17 5.21-7.09 1.13-.34 2.32-.4 3.49-.17V11c-.72-.25-1.5-.23-2.21.07-.96.4-1.68 1.26-1.93 2.27-.39 1.56.4 3.25 1.9 3.86 1.13.47 2.45.19 3.27-.72.58-.65.88-1.51.87-2.38V.02z"/>
+                    </svg>
+                </a>
+                
+                <a href="https://www.instagram.com" target="_blank" class="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition duration-300 shadow-md">
+                    <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                
+                <a href="https://wa.me/2348169421305" target="_blank" class="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition duration-300 shadow-md">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-3.813c1.644.975 3.51 1.488 5.415 1.489 5.346 0 9.701-4.35 9.705-9.697.002-2.59-1.001-5.024-2.825-6.85-1.824-1.826-4.259-2.83-6.855-2.831-5.349 0-9.704 4.352-9.708 9.7.001 2.02.527 3.995 1.523 5.73l-.1.593-.66 2.408 2.463-.646.588-.348zm9.585-5.342c.264.132.424.198.489.308.066.11.066.638-.165 1.298-.231.66-1.353 1.298-1.881 1.342-.528.044-1.012.154-3.212-.726-2.2-1.122-3.608-3.41-3.718-3.564-.11-.154-.88-1.166-.88-2.244 0-1.078.55-1.606.748-1.826.198-.22.44-.264.594-.264.154 0 .308.022.44.022.132 0 .308-.044.484.396.176.44.616 1.518.682 1.65.066.132.11.286.022.462-.088.176-.176.286-.308.44-.132.154-.264.33-.374.44-.121.121-.242.253-.102.495.14.242.612 1.012 1.314 1.639.902.803 1.662 1.056 1.893 1.177.231.121.363.099.495-.055.132-.154.55-.638.704-.858.154-.22.308-.176.528-.088z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs md:text-sm font-medium tracking-wide text-gray-300">
+                <a href="#home" class="hover:text-green-400 transition">Home</a>
+                <a href="#about" class="hover:text-green-400 transition">About</a>
+                <a href="#gallery" class="hover:text-green-400 transition">Our Products</a>
+                <a href="#testimonials" class="hover:text-green-400 transition">Reviews</a>
+                <a href="#contact" class="hover:text-green-400 transition">Contact Us</a>
+            </div>
+
+            <div class="w-full border-t border-green-900 pt-8 mt-4">
+                <p class="text-[11px] tracking-widest text-gray-500">
+                    Copyright © 2026; Designed by Kenayo | Foodcartbykedvital
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU TOGGLE -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Changes the hamburger icon structure slightly when opened
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        // Automatically hide mobile menu drawer after choosing a link
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
+
+</body>
+</html>
